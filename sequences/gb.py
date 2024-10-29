@@ -10,16 +10,26 @@ with open('sequences.gb', 'r') as gb:
 with open('target_species.txt', 'r') as txt:
     target_species = [line.strip().split()[-1] for line in txt]
 
-target_genera = ['Adelophryne', 'Eleutherodactylus', 'Diasporus', 'Phyzelaphryne', 'Ischnocnema', 'Brachycephalus']
+target_genera = ['Adelophryne', 'Eleutherodactylus', 'Diasporus', 'Phyzelaphryne', 'Ischnocnema']
 
 seen_species = set()
 records_to_write = []
+
+def val_seq(seq):
+    """
+    Verifies if all characters in a sequence is valid
+    """
+    nucleotides = ['A', 'C', 'G', 'T']
+    return all(nt in nucleotides for nt in seq)
 
 for record in records:
     specie = None
     annotations = record.annotations
 
-    if 'organism' in annotations and len(record.seq) > 600 and len(record.seq) < 800:
+    if 'organism' in annotations and \
+        len(record.seq) > 600 and \
+        len(record.seq) < 700 and \
+        val_seq(record.seq):
         organism = annotations['organism']
         organism_parts = organism.split()
         if organism_parts[1] in target_species and organism_parts[0] in target_genera:

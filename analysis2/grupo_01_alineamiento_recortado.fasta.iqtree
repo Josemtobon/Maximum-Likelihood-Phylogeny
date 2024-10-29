@@ -1,0 +1,377 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: grupo_01_alineamiento_recortado.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 709809
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 47 sequences with 542 nucleotide sites
+Number of constant sites: 262 (= 48.3395% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 262 (= 48.3395% of all sites)
+Number of parsimony informative sites: 265
+Number of distinct site patterns: 283
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TPM2u+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TPM2u+F+I+G4     -10741.442   21678.883 +    0.418   21722.685 +    0.644   22099.819 +    0.941
+TIM2+F+I+G4      -10741.196   21680.393 +    0.196   21725.189 +    0.184   22105.624 +   0.0516
+TVM+F+I+G4       -10740.043   21680.087 +    0.229   21725.892 +     0.13   22109.613 -  0.00703
+GTR+F+I+G4       -10739.681   21681.361 +    0.121   21728.189 -   0.0411   22115.183 - 0.000434
+HKY+F+I+G4       -10753.758   21701.516 - 5.08e-06   21744.336 - 1.28e-05   22118.157 - 9.81e-05
+K3Pu+F+I+G4      -10752.081   21700.163 -    1e-05   21743.964 - 1.54e-05   22121.099 - 2.25e-05
+TN+F+I+G4        -10752.881   21701.762 -  4.5e-06   21745.563 - 6.94e-06   22122.698 - 1.01e-05
+TPM3u+F+I+G4     -10753.511   21703.021 -  2.4e-06   21746.823 -  3.7e-06   22123.957 -  5.4e-06
+TIM+F+I+G4       -10751.247   21700.493 - 8.48e-06   21745.290 - 7.95e-06   22125.725 - 2.23e-06
+TIM3+F+I+G4      -10752.642   21703.284 -  2.1e-06   21748.080 - 1.97e-06   22128.515 - 5.52e-07
+GTR+F+I+R4       -10736.904   21685.808 -   0.0131   21737.955 - 0.000311   22141.106 - 1.02e-09
+GTR+F+R5         -10735.557   21685.115 -   0.0185   21738.368 - 0.000253   22144.708 - 1.68e-10
+GTR+F+R4         -10745.410   21700.820 -  7.2e-06   21751.875 - 2.96e-07   22151.823 -  4.8e-12
+GTR+F+I+R5       -10736.803   21689.605 -  0.00196   21743.979 - 1.53e-05   22153.494 - 2.08e-12
+GTR+F+I+R3       -10749.709   21707.418 - 2.66e-07   21757.395 - 1.87e-08   22154.126 - 1.52e-12
+GTR+F+R6         -10735.632   21689.264 -  0.00233   21744.774 - 1.03e-05   22157.448 - 2.88e-13
+TIM2e+I+G4       -10801.218   21794.437 - 3.38e-26   21836.288 - 1.38e-25   22206.782 - 5.58e-24
+SYM+I+G4         -10799.288   21794.577 - 3.15e-26   21838.378 - 4.86e-26   22215.513 -  7.1e-26
+GTR+F+R3         -10802.595   21811.189 - 7.78e-30   21860.102 - 9.32e-31   22253.602 -  3.8e-34
+TPM2+I+G4        -10832.938   21855.876 - 1.54e-39   21896.773 - 1.01e-38   22263.927 - 2.18e-36
+TVMe+I+G4        -10830.668   21855.336 - 2.02e-39   21898.156 - 5.08e-39   22271.977 - 3.89e-38
+TNe+I+G4         -10857.692   21905.385 - 2.73e-50   21946.282 -  1.8e-49   22313.435 - 3.87e-47
+TIMe+I+G4        -10855.239   21902.478 - 1.17e-49   21944.330 - 4.78e-49   22314.824 - 1.93e-47
+TIM3e+I+G4       -10856.598   21905.195 - 3.01e-50   21947.047 - 1.23e-49   22317.541 - 4.97e-48
+GTR+F+I+R2       -10839.882   21883.763 - 1.35e-45   21931.627 - 2.74e-46   22321.880 - 5.67e-49
+K2P+I+G4         -10881.683   21951.365 - 2.83e-60   21991.320 - 2.99e-59   22355.120 - 3.43e-56
+K3P+I+G4         -10879.317   21948.634 - 1.11e-59   21989.531 - 7.31e-59   22356.685 - 1.57e-56
+TPM3+I+G4        -10880.258   21950.517 - 4.33e-60   21991.414 - 2.85e-59   22358.567 - 6.13e-57
+GTR+F+G4         -10864.605   21929.210 - 1.83e-55   21975.015 - 1.04e-55   22358.737 - 5.63e-57
+GTR+F+R2         -10972.730   22147.460 - 7.43e-103   22194.287 - 2.52e-103   22581.282 - 2.66e-105
+GTR+F+I          -11287.719   22775.438 - 3.21e-239   22821.243 - 1.82e-239   23204.965 - 9.87e-241
+F81+F+I+G4       -11769.294   23730.588 -        0   23772.440 -        0   24142.934 -        0
+JC+I+G4          -11940.117   24066.233 -        0   24105.260 -        0   24465.693 -        0
+GTR+F            -13145.689   26489.378 -        0   26534.175 -        0   26914.610 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TPM2u+F+I+G4
+
+Rate parameter R:
+
+  A-C: 2.4227
+  A-G: 21.2471
+  A-T: 2.4227
+  C-G: 1.0000
+  C-T: 21.2471
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2359
+  pi(C) = 0.2915
+  pi(G) = 0.1703
+  pi(T) = 0.3023
+
+Rate matrix Q:
+
+  A   -0.7985    0.1115    0.5714    0.1157
+  C   0.09026    -1.131   0.02689     1.014
+  G    0.7916   0.04603   -0.8853   0.04774
+  T   0.09026    0.9779   0.02689    -1.095
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.468
+Gamma shape alpha: 0.72
+
+ Category  Relative_rate  Proportion
+  0         0              0.468
+  1         0.1475         0.133
+  2         0.7007         0.133
+  3         1.752          0.133
+  4         4.918          0.133
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -10740.2496 (s.e. 475.6265)
+Unconstrained log-likelihood (without tree): -2307.7952
+Number of free parameters (#branches + #model parameters): 98
+Akaike information criterion (AIC) score: 21676.4992
+Corrected Akaike information criterion (AICc) score: 21720.3006
+Bayesian information criterion (BIC) score: 22097.4353
+
+Total tree length (sum of branch lengths): 15.1398
+Sum of internal branch lengths: 4.6200 (30.5159% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Eleutherodactylus_longipes' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------Eleutherodactylus_longipes
+|
++-------Eleutherodactylus_leprus
+|
+|          +--Eleutherodactylus_verrucipes
+|     +----| (100)
+|     |    +--Eleutherodactylus_guttilatus
+|  +--| (82)
+|  |  |         +----Eleutherodactylus_angustidigitorum
+|  |  |     +---| (94)
+|  |  |     |   |  +------Eleutherodactylus_manantlanensis
+|  |  |     |   +--| (69)
+|  |  |     |      |  +---Eleutherodactylus_nietoi
+|  |  |     |      +--| (60)
+|  |  |     |         +----------Eleutherodactylus_pallidus
+|  |  |  +--| (67)
+|  |  |  |  |     +---Eleutherodactylus_syristes
+|  |  |  |  |  +--| (85)
+|  |  |  |  |  |  +--Eleutherodactylus_maurus
+|  |  |  |  +--| (99)
+|  |  |  |     +-----Eleutherodactylus_nitidus
+|  |  +--| (96)
+|  |     |  +-----Eleutherodactylus_erythrochomus
+|  |     +--| (89)
+|  |        +---Eleutherodactylus_rubrimaculatus
++--| (86)
+   |  +---------Eleutherodactylus_cystignathoides
+   +--| (78)
+      |                           +------------Diasporus_amirae
+      |                        +--| (73)
+      |                        |  |  +----Diasporus_diastema
+      |                        |  +--| (96)
+      |                        |     +---Diasporus_quidditus
+      |             +----------| (100)
+      |             |          +-------------Diasporus_hylaeformis
+      |          +--| (76)
+      |          |  |        +------------Eleutherodactylus_coqui
+      |          |  |     +--| (87)
+      |          |  |     |  |  +-----Eleutherodactylus_principalis
+      |          |  |     |  +--| (94)
+      |          |  |     |     +------Eleutherodactylus_glamyrus
+      |          |  +-----| (99)
+      |          |        |  +----------Eleutherodactylus_johnstonei
+      |          |        +--| (89)
+      |          |           +-------Eleutherodactylus_eileenae
+      |       +--| (97)
+      |       |  |                 +---------------Adelophryne_baturitensis
+      |       |  |              +--| (92)
+      |       |  |              |  +---------Adelophryne_maranguapensis
+      |       |  |           +--| (92)
+      |       |  |           |  +----------------------Adelophryne_pachydactyla
+      |       |  |       +---| (94)
+      |       |  |       |   |        +-----Adelophryne_patamona
+      |       |  |       |   |  +-----| (96)
+      |       |  |       |   |  |     |  +---------------Adelophryne_adiastola
+      |       |  |       |   |  |     +--| (93)
+      |       |  |       |   |  |        +----------Adelophryne_gutturosa
+      |       |  |       |   +--| (32)
+      |       |  |       |      +----------------Phyzelaphryne_miriamae
+      |       |  |    +--| (65)
+      |       |  |    |  |              +--Eleutherodactylus_mariposa
+      |       |  |    |  +--------------| (100)
+      |       |  |    |                 +**Eleutherodactylus_ronaldi
+      |       |  +----| (97)
+      |       |       |                           +---------Ischnocnema_henselii
+      |       |       |                 +---------| (100)
+      |       |       |                 |         +--Ischnocnema_guentheri
+      |       |       |              +--| (89)
+      |       |       |              |  +--------Ischnocnema_crassa
+      |       |       |           +--| (93)
+      |       |       |           |  +----------Ischnocnema_parva
+      |       |       |      +----| (99)
+      |       |       |      |    +------------Ischnocnema_juipoca
+      |       |       |   +--| (86)
+      |       |       |   |  +-------Ischnocnema_lactea
+      |       |       +---| (96)
+      |       |           +-----------Ischnocnema_vizottoi
+      +-------| (100)
+              |     +-----Eleutherodactylus_planirostris
+              +-----| (99)
+                    |  +-------Eleutherodactylus_atkinsi
+                    +--| (88)
+                       |  +---Eleutherodactylus_cubanus
+                       +--| (86)
+                          |  +----Eleutherodactylus_etheridgei
+                          +--| (73)
+                             |        +--Eleutherodactylus_iberia
+                             |     +--| (100)
+                             |     |  +--Eleutherodactylus_orientalis
+                             |  +--| (96)
+                             |  |  +--Eleutherodactylus_jaumei
+                             +--| (100)
+                                +--Eleutherodactylus_limbatus
+
+Tree in newick format:
+
+(Eleutherodactylus_longipes:0.2941441457,Eleutherodactylus_leprus:0.2521608287,(((Eleutherodactylus_verrucipes:0.0412793296,Eleutherodactylus_guttilatus:0.0479755923)100:0.1675338637,(((Eleutherodactylus_angustidigitorum:0.1667657735,(Eleutherodactylus_manantlanensis:0.1999848929,(Eleutherodactylus_nietoi:0.1378391552,Eleutherodactylus_pallidus:0.3224476550)60:0.0482665870)69:0.0336205229)94:0.1311577585,((Eleutherodactylus_syristes:0.1346876899,Eleutherodactylus_maurus:0.0592356335)85:0.0354352047,Eleutherodactylus_nitidus:0.1711705111)99:0.1012189038)67:0.0298510564,(Eleutherodactylus_erythrochomus:0.1688367023,Eleutherodactylus_rubrimaculatus:0.1229571833)89:0.0295635134)96:0.1026540897)82:0.0335867552,(Eleutherodactylus_cystignathoides:0.3073382484,(((((Diasporus_amirae:0.3737108010,(Diasporus_diastema:0.1460681641,Diasporus_quidditus:0.1365102637)96:0.1018723647)73:0.0853480476,Diasporus_hylaeformis:0.4130143668)100:0.3113803936,((Eleutherodactylus_coqui:0.3830349766,(Eleutherodactylus_principalis:0.1869692017,Eleutherodactylus_glamyrus:0.2038388496)94:0.0609675419)87:0.0419965674,(Eleutherodactylus_johnstonei:0.3247970215,Eleutherodactylus_eileenae:0.2454927231)89:0.0915515532)99:0.1687257142)76:0.0862011385,(((((Adelophryne_baturitensis:0.4697187882,Adelophryne_maranguapensis:0.3050543066)92:0.0897915701,Adelophryne_pachydactyla:0.6598400054)92:0.0859251235,((Adelophryne_patamona:0.1854148714,(Adelophryne_adiastola:0.4536038008,Adelophryne_gutturosa:0.3163438064)93:0.0556486643)96:0.1844289746,Phyzelaphryne_miriamae:0.4909533003)32:0.0609335625)94:0.1323719254,(Eleutherodactylus_mariposa:0.0904920347,Eleutherodactylus_ronaldi:0.0000016415)100:0.4239623524)65:0.0759185222,((((((Ischnocnema_henselii:0.3067818016,Ischnocnema_guentheri:0.0959251120)100:0.3023108839,Ischnocnema_crassa:0.2646101320)89:0.0437227936,Ischnocnema_parva:0.3258766130)93:0.0528895931,Ischnocnema_juipoca:0.3756967563)99:0.1466072630,Ischnocnema_lactea:0.2411562665)86:0.1002173485,Ischnocnema_vizottoi:0.3396282648)96:0.1164743731)97:0.1432676768)97:0.1101709793,(Eleutherodactylus_planirostris:0.1866997520,(Eleutherodactylus_atkinsi:0.2284932200,(Eleutherodactylus_cubanus:0.1138298247,(Eleutherodactylus_etheridgei:0.1464844294,(((Eleutherodactylus_iberia:0.0324703502,Eleutherodactylus_orientalis:0.0200044431)100:0.0550495918,Eleutherodactylus_jaumei:0.0149027595)96:0.0089291886,Eleutherodactylus_limbatus:0.0155019288)100:0.1091204104)73:0.0132794357)86:0.0668949377)88:0.0477370673)99:0.1707104762)100:0.2468433279)78:0.0338112909)86:0.0820846679);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -10740.396408
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------Eleutherodactylus_longipes
+|
++-------Eleutherodactylus_leprus
+|
+|          +--Eleutherodactylus_verrucipes
+|     +----| (100)
+|     |    +--Eleutherodactylus_guttilatus
+|  +--| (82)
+|  |  |         +----Eleutherodactylus_angustidigitorum
+|  |  |     +---| (94)
+|  |  |     |   |  +------Eleutherodactylus_manantlanensis
+|  |  |     |   +--| (69)
+|  |  |     |      |  +---Eleutherodactylus_nietoi
+|  |  |     |      +--| (60)
+|  |  |     |         +----------Eleutherodactylus_pallidus
+|  |  |  +--| (67)
+|  |  |  |  |     +---Eleutherodactylus_syristes
+|  |  |  |  |  +--| (85)
+|  |  |  |  |  |  +--Eleutherodactylus_maurus
+|  |  |  |  +--| (99)
+|  |  |  |     +-----Eleutherodactylus_nitidus
+|  |  +--| (96)
+|  |     |  +-----Eleutherodactylus_erythrochomus
+|  |     +--| (89)
+|  |        +---Eleutherodactylus_rubrimaculatus
++--| (86)
+   |  +---------Eleutherodactylus_cystignathoides
+   +--| (78)
+      |                           +------------Diasporus_amirae
+      |                        +--| (73)
+      |                        |  |  +----Diasporus_diastema
+      |                        |  +--| (96)
+      |                        |     +---Diasporus_quidditus
+      |             +----------| (100)
+      |             |          +-------------Diasporus_hylaeformis
+      |          +--| (76)
+      |          |  |       +------------Eleutherodactylus_coqui
+      |          |  |    +--| (87)
+      |          |  |    |  |  +-----Eleutherodactylus_principalis
+      |          |  |    |  +--| (94)
+      |          |  |    |     +------Eleutherodactylus_glamyrus
+      |          |  +----| (99)
+      |          |       |  +----------Eleutherodactylus_johnstonei
+      |          |       +--| (89)
+      |          |          +-------Eleutherodactylus_eileenae
+      |       +--| (97)
+      |       |  |                    +---------------Adelophryne_baturitensis
+      |       |  |                 +--| (92)
+      |       |  |                 |  +----------Adelophryne_maranguapensis
+      |       |  |              +--| (92)
+      |       |  |              |  +----------------------Adelophryne_pachydactyla
+      |       |  |           +--| (43)
+      |       |  |           |  +----------------Phyzelaphryne_miriamae
+      |       |  |       +---| (94)
+      |       |  |       |   |      +-----Adelophryne_patamona
+      |       |  |       |   +------| (96)
+      |       |  |       |          |  +---------------Adelophryne_adiastola
+      |       |  |       |          +--| (93)
+      |       |  |       |             +----------Adelophryne_gutturosa
+      |       |  |    +--| (65)
+      |       |  |    |  |              +--Eleutherodactylus_mariposa
+      |       |  |    |  +--------------| (100)
+      |       |  |    |                 +--Eleutherodactylus_ronaldi
+      |       |  +----| (97)
+      |       |       |                          +----------Ischnocnema_henselii
+      |       |       |                +---------| (100)
+      |       |       |                |         +--Ischnocnema_guentheri
+      |       |       |             +--| (89)
+      |       |       |             |  +--------Ischnocnema_crassa
+      |       |       |          +--| (93)
+      |       |       |          |  +----------Ischnocnema_parva
+      |       |       |     +----| (99)
+      |       |       |     |    +------------Ischnocnema_juipoca
+      |       |       |  +--| (86)
+      |       |       |  |  +-------Ischnocnema_lactea
+      |       |       +--| (96)
+      |       |          +-----------Ischnocnema_vizottoi
+      +-------| (100)
+              |     +-----Eleutherodactylus_planirostris
+              +-----| (99)
+                    |  +-------Eleutherodactylus_atkinsi
+                    +--| (88)
+                       |  +---Eleutherodactylus_cubanus
+                       +--| (86)
+                          |  +----Eleutherodactylus_etheridgei
+                          +--| (73)
+                             |        +--Eleutherodactylus_iberia
+                             |     +--| (100)
+                             |     |  +--Eleutherodactylus_orientalis
+                             |  +--| (96)
+                             |  |  +--Eleutherodactylus_jaumei
+                             +--| (100)
+                                +--Eleutherodactylus_limbatus
+
+
+Consensus tree in newick format: 
+
+(Eleutherodactylus_longipes:0.2937120837,Eleutherodactylus_leprus:0.2521931181,(((Eleutherodactylus_verrucipes:0.0410430271,Eleutherodactylus_guttilatus:0.0482751691)100:0.1670689903,(((Eleutherodactylus_angustidigitorum:0.1666659691,(Eleutherodactylus_manantlanensis:0.2000594946,(Eleutherodactylus_nietoi:0.1380041433,Eleutherodactylus_pallidus:0.3218309022)60:0.0494067521)69:0.0336016150)94:0.1312208409,((Eleutherodactylus_syristes:0.1346025224,Eleutherodactylus_maurus:0.0592943305)85:0.0354696924,Eleutherodactylus_nitidus:0.1712390644)99:0.1026646197)67:0.0301562407,(Eleutherodactylus_erythrochomus:0.1685696671,Eleutherodactylus_rubrimaculatus:0.1228983353)89:0.0289671485)96:0.1026949595)82:0.0335274334,(Eleutherodactylus_cystignathoides:0.3086446140,(((((Diasporus_amirae:0.3735528132,(Diasporus_diastema:0.1468662186,Diasporus_quidditus:0.1355731316)96:0.1018226348)73:0.0846284717,Diasporus_hylaeformis:0.4128901435)100:0.3090009934,((Eleutherodactylus_coqui:0.3812325763,(Eleutherodactylus_principalis:0.1852256282,Eleutherodactylus_glamyrus:0.2053035470)94:0.0608739412)87:0.0419224973,(Eleutherodactylus_johnstonei:0.3262165237,Eleutherodactylus_eileenae:0.2448280720)89:0.0945596418)99:0.1674230300)76:0.0859467455,((((((Adelophryne_baturitensis:0.4572690571,Adelophryne_maranguapensis:0.3202304549)92:0.0879073816,Adelophryne_pachydactyla:0.6529163041)92:0.0780415211,Phyzelaphryne_miriamae:0.4920481112)43:0.0539668852,(Adelophryne_patamona:0.1961356281,(Adelophryne_adiastola:0.4532964389,Adelophryne_gutturosa:0.3151960643)93:0.0444766272)96:0.2042706629)94:0.1341719117,(Eleutherodactylus_mariposa:0.0905486586,Eleutherodactylus_ronaldi:0.0000026159)100:0.4419051155)65:0.0627732196,((((((Ischnocnema_henselii:0.3093307979,Ischnocnema_guentheri:0.0945739583)100:0.3032763170,Ischnocnema_crassa:0.2634412252)89:0.0442169522,Ischnocnema_parva:0.3257141263)93:0.0534962107,Ischnocnema_juipoca:0.3749153973)99:0.1458530490,Ischnocnema_lactea:0.2413334746)86:0.1009135407,Ischnocnema_vizottoi:0.3399610363)96:0.1122295338)97:0.1462430063)97:0.1098095407,(Eleutherodactylus_planirostris:0.1857256645,(Eleutherodactylus_atkinsi:0.2279479452,(Eleutherodactylus_cubanus:0.1134181721,(Eleutherodactylus_etheridgei:0.1463049165,(((Eleutherodactylus_iberia:0.0324970096,Eleutherodactylus_orientalis:0.0200193841)100:0.0550877787,Eleutherodactylus_jaumei:0.0149372996)96:0.0089959634,Eleutherodactylus_limbatus:0.0154293284)100:0.1092679447)73:0.0146831515)86:0.0675791878)88:0.0481620297)99:0.1743190530)100:0.2437136616)78:0.0329891584)86:0.0816057442);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t grupo_01_alineamiento_recortado.fasta.treefile -m "TPM2u{2.42267,21.2471}+F{0.235927,0.291474,0.170291,0.302308}+I{0.467961}+G4{0.719958}" --length 542
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s grupo_01_alineamiento_recortado.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s grupo_01_alineamiento_recortado.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct 29 18:04:39 2024
+Total CPU time used: 14.547116 seconds (0h:0m:14s)
+Total wall-clock time used: 15.0295641 seconds (0h:0m:15s)
+
